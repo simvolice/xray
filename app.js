@@ -2,12 +2,14 @@
  * Created by simvolice on 31.07.2017 17:35
  */
 const Xray = require('x-ray');
+const iconv = require('iconv-lite');
 const x = Xray();
 
 
 
 
-x('http://ac-kkt.su/services/kompressory-gx-ga-gr/', {
+
+x('http://localhost:63342/ac-kkt.su/services/kompressory-gx-ga-gr/index.html?_ijt=kuhk4mv6vgk8golkqs0beebifa', {
 
     items: x('.item', [{
         title: '.title a',
